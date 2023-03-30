@@ -63,12 +63,14 @@ function checkInverse() {
         var data = [{
             x: xValues1,
             y: yValues1,
-            mode: "lines"
+            mode: "lines",
+            type: 'scatter'
         },
         {
             x: xValues2,
             y: yValues2,
-            mode: "lines"
+            mode: "lines",
+            type: 'scatter'
         }];
 
 
