@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checking for Inverse Functions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <h1>Checking for Inverse Functions</h1>
+    <p>Enter a function f(x):</p>
+    <input type="text" id="fInput">
+    <p>Enter a function g(x):</p>
+    <input type="text" id="gInput">
+    <button onclick="checkInverse()">Check for Inverse Functions</button>
+    <!-- <button onclick="checkTrigonometric()">Check</button> -->
+    <button type="button" onclick="onRefresh();">Refresh</button>
+    <p><span id="result"></span></p>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
