@@ -12,7 +12,13 @@ function checkInverse() {
         var f = fi.replace(/(sin)/gi, "Math.sin");
     }
     var f = f.replace(/\^/gi, "**");
-    var g = document.getElementById("gInput").value;
+    var gi = document.getElementById("gInput").value;
+    var g;
+    if (true) {
+        gi.search(/sin/gi);
+        var g = gi.replace(/(sin)/gi, "Math.sin");
+    }
+    var g = g.replace(/\^/gi, "**");
 
     // Check if f(g(x)) = x and g(f(x)) = x for a range of x values
     if (f == "" || g == "") {
@@ -83,6 +89,7 @@ function onRefresh() {
     document.getElementById("fInput").value = "";
     document.getElementById("gInput").value = "";
     document.getElementById("result").innerHTML = "";
+
 }
 
 // function checkTrigonometric() {
